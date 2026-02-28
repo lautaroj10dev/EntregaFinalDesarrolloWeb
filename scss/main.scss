@@ -1,0 +1,167 @@
+$bg: #6b9168;
+$brand: #472d2d;
+$text-muted: rgb(200, 205, 209);
+$nav-text: #2b1b12;
+$accent: #8b5e34;
+$danger: #e74c3c;
+
+body {
+  background-color: $bg;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: $brand;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  color: $text-muted;
+  font-weight: bold;
+  padding: 20px;
+}
+
+%flex-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+ul {
+  &.tiposdecafe { @extend %flex-list; }
+  &.pie { @extend %flex-list; }
+}
+
+.menu {
+  li {
+    a {
+      text-decoration: none;
+      color: $brand;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 20px;
+
+      &:hover {
+        color: black;
+        border: none;
+      }
+    }
+  }
+}
+
+.navbar {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: $nav-text;
+    padding: 0.4rem 0.75rem;
+    letter-spacing: 0.2px;
+    border-radius: 999px;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+      text-decoration: none;
+    }
+
+    &.active {
+      color: $accent;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+  }
+}
+
+.btn-buscar {
+  border-color: $accent;
+  color: $accent;
+
+  &:hover {
+    background-color: $accent;
+    border-color: $accent;
+    color: #fff;
+  }
+}
+
+.videos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vid {
+  width: 400px;
+
+  video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.menu-cart {
+  margin-left: auto; 
+}
+
+.caja {
+  figure { margin: 0; }
+}
+
+.card-img-top {
+  height: 360px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-menu {
+  .card-text { color: $bg; }
+}
+
+.cart-count {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: $danger;
+  color: white;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  a.link-light {
+    &:hover {
+      color: #f3d5b5 !important;
+      text-decoration: underline !important;
+      text-underline-offset: 5px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-center { justify-self: center; }
+  .nav-right { justify-self: end; }
+}

@@ -1,106 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carta</title>
-</head>
-<body>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+
+  <body>
     <header>
+      <h1>M&L Coffe</h1>
+      <p>Sensaciones de la cocina a tu mesa.</p>
 
-        <h1>M&L Coffe</h1>
-        <p>Sensaciones de la cocina a tu mesa.</p>
-        
-        <nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4 position-relative">
+          <a class="navbar-brand fw-bold" href="/index.html"></a>
 
-             <ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+          
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/cafes.html">Cafés</a></li>
-                <li><a href="./pages/desayunosymeriendas.html">Desayunos y meriendas</a></li>
-                <li><a href="./pages/almuerzos.html">Almuerzos</a></li>
-                <li><a href="./pages/pasteleria.html">Pasteleria</a></li>
-                <li><a href="./pages/sintacc.html">Sin tacc</a></li>
-             </ul>
-
-
-        </nav>
-
-    </header>
-
-    <main>
-
-        <div>
-
-            <ul>
-
-                <li>Café expreso</li>
-                <figure></figure>
-                  <img src="./img/cafeexpreso.jpg" alt="">
-                  <figcaption> Bebida de café intensa y concentrada, preparada al forzar agua caliente a alta presión a través de café finamente molido. Se sirve en poca cantidad y se caracteriza por su aroma fuerte y una capa de crema en la superficie.</figcaption>
-                  <h2>$2100</h2>
-                </figure>
-
-                <li>Cafe con leche</li>
-                <figure>
-                  <img src="./img/cafe con leche.jpg" alt="">
-                  <figcaption>El café con leche es una bebida caliente hecha con café fuerte y leche caliente, generalmente en partes iguales, de sabor suave y muy popular para el desayuno.</figcaption>
-                  <h2>$2900</h2>
-                </figure>
-
-                <li>Café lagrima</li>
-                <figure>
-                  <img src="./img/cafe lafrima.jpg" alt="">
-                  <figcaption>El café lágrima es una bebida muy suave que consiste principalmente en leche caliente con solo unas gotas de café, lo que le da un color claro y un sabor apenas intenso.</figcaption>
-                  <h2>$2500</h2>
-                </figure>
-
-                <li>Flat white</li>
-                <figure>
-                  <img src="./img/flatwhite.jpg" alt="">
-                  <figcaption>Café espresso con leche caliente y poca espuma, de textura cremosa y sabor más intenso a café.</figcaption>
-                  <h2>$2900</h2>
-                </figure>
-
-                <li>Capuccino</li>
-                <figure>
-                  <img src="./img/capuccino.jpg" alt="">
-                  <figcaption>Espresso con leche caliente y abundante espuma, equilibrado y de textura espesa.</figcaption>
-                  <h2>$3800</h2>
-                </figure>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul
+              class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-3">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
                 
-                <li>Latte</li>
-                <figure>
-                  <img src="./img/latte.jpg" alt="">
-                  <figcaption>Espresso con mucha leche caliente y una fina capa de espuma, de sabor suave y cremoso.</figcaption>
-                  <h2>$2900</h2>
-                </figure>
-
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
+              </li>
             </ul>
 
-         </div>
+            <ul class="navbar-nav d-lg-none">
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/cafes.html">Cafés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
+              </li>
+            </ul>
 
+            <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control form-control-sm me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"/>
+                
+                <button
+                  class="btn btn-sm btn-outline-success btn-buscar"
+                  type="submit">Buscar</button>
+              </form>
 
+              <a
+                href="/pages/carrito.html"
+                class="text-decoration-none position-relative"
+                aria-label="Carrito">
+              
+                <span style="font-size: 20px">🛒</span>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-4">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img
+                src="./img/cafeexpreso.jpg"
+                class="card-img-top"
+                alt="Café expreso"/>
+              
+              <div class="card-body">
+                <h5 class="card-title mb-1">Café expreso</h5>
+                <p class="card-text small mb-2">
+                  Bebida de café intensa y concentrada, preparada al forzar agua
+                  caliente a alta presión a través de café finamente molido. Se
+                  sirve en poca cantidad.
+                </p>
+                <h6 class="mb-0">$2100</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img
+                src="./img/cafe con leche.jpg"
+                class="card-img-top"
+                alt="Café con leche"/>
+              
+              <div class="card-body">
+                <h5 class="card-title mb-1">Café con leche</h5>
+                <p class="card-text small mb-2">
+                  El café con leche es una bebida caliente hecha con café fuerte
+                  y leche caliente, generalmente en partes iguales, de sabor suave
+                  y muy popular para el desayuno.
+                </p>
+                <h6 class="mb-0">$2900</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img
+                src="./img/cafe lafrima.jpg"
+                class="card-img-top"
+                alt="Café lágrima"/>
+              
+              <div class="card-body">
+                <h5 class="card-title mb-1">Café lágrima</h5>
+                <p class="card-text small mb-2">
+                  El café lágrima es una bebida muy suave que consiste principalmente
+                  en leche caliente con solo unas gotas de café, lo que le da un
+                  color claro y un sabor apenas intenso.
+                </p>
+                <h6 class="mb-0">$2500</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img
+                src="./img/flatwhite.jpg"
+                class="card-img-top"
+                alt="Flat white"/>
+              
+              <div class="card-body">
+                <h5 class="card-title mb-1">Flat white</h5>
+                <p class="card-text small mb-2">
+                  Café espresso con leche caliente y poca espuma, de textura cremosa
+                  y sabor más intenso a café.
+                </p>
+                <h6 class="mb-0">$2900</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img
+                src="./img/capuccino.jpg"
+                class="card-img-top"
+                alt="Capuccino"/>
+              
+              <div class="card-body">
+                <h5 class="card-title mb-1">Capuccino</h5>
+                <p class="card-text small mb-2">
+                  Espresso con leche caliente y abundante espuma, equilibrado y de
+                  textura espesa.
+                </p>
+                <h6 class="mb-0">$3800</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-menu border-0">
+              <img src="./img/latte.jpg" class="card-img-top" alt="Latte" />
+              <div class="card-body">
+                <h5 class="card-title mb-1">Latte</h5>
+                <p class="card-text small mb-2">
+                  Espresso con mucha leche caliente y una fina capa de espuma, de
+                  sabor suave y cremoso.
+                </p>
+                <h6 class="mb-0">$2900</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row g-3 align-items-center">
+          <div class="col-12 col-lg-4">
+            <h5 class="mb-2">M&L Coffe</h5>
+          </div>
 
-    <footer>
+          <div class="col-12 col-lg-8">
+            <ul
+              class="list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 justify-content-lg-end mb-0">
+            
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/sobre-nosotros.html">Sobre nosotros</a>
+                
+              </li>
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/mi-cuenta.html">Mi cuenta</a>
+                
+              </li>
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/carrito.html">Carrito</a>
+                
+              </li>
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/derechos-de-autor.html">Derechos de autor</a>
+                
+              </li>
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/quejas-online.html">Quejas online</a>
+                
+              </li>
+              <li>
+                <a
+                  class="link-light text-decoration-none"
+                  href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <ul>
+        <hr class="border-secondary my-3" />
 
-            <li>Sobre nosotros</li>
-            <li>Mi cuenta</li>
-            <li>Carrito</li>
-            <li>Derechos de autor</li>
-            <li>Quejas online</li>
-            <li>Trabaja con nostros</li>
-
-        </ul>
-
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+        
+          <span class="small text-secondary">© 2026 M&L Coffe. Todos los derechos reservados.</span>
+          
+          <div class="d-flex gap-3">
+            <a class="link-light" href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="link-light" href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="link-light" href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
