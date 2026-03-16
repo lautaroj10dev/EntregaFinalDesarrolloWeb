@@ -70,11 +70,6 @@ main {
   padding: 20px 0 30px;
 }
 
-.collapse,
-.collapsing {
-  width: 100%;
-}
-
 .logo {
   display: block;
   max-width: 230px;
@@ -349,7 +344,7 @@ footer {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
-  align-items: stretch;
+  align-items: start;
 }
 
 @media (min-width: 1200px) {
@@ -374,7 +369,7 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
 }
 
 .tipo-titulo {
