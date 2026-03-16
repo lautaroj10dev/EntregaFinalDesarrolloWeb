@@ -18,96 +18,39 @@
 
   <body>
     <header>
-      <h1>M&L Coffe</h1>
-      <p>Sensaciones de la cocina a tu mesa.</p>
-
+      <div class="header-top">
+        <img src="./pages/img/logoMYL.png" alt="Logo de M&L Coffe" class="logo" />
+        <p class="headertext">Sensaciones de la cocina a tu mesa.</p>
+        <div class="header-spacer"></div>
+      </div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-4 position-relative">
           <a class="navbar-brand fw-bold" href="/index.html"></a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-          
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="mainNav">
-            <ul
-              class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-3">
-            
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+            <ul class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-4">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <ul class="navbar-nav d-lg-none">
-              <li class="nav-item">
-                <a class="nav-link active" href="/pages/almuerzos.html">Almuerzos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+              <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
               <form class="d-flex" role="search">
-                <input
-                  class="form-control form-control-sm me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Buscar"/>
-                
-                <button
-                  class="btn btn-sm btn-outline-success btn-buscar"
-                  type="submit">Buscar</button>
+                <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-sm btn-outline-success btn-buscar" type="submit">Buscar</button>
               </form>
-
-              <a
-                href="/pages/carrito.html"
-                class="text-decoration-none position-relative"
-                aria-label="Carrito">
-              
-                <span style="font-size: 20px">🛒</span>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                
-              </a>
+              <a href="/pages/carrito.html" class="text-decoration-none position-relative" aria-label="Carrito"><span style="font-size: 30px">🛒</span>
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
             </div>
           </div>
         </div>
@@ -128,6 +71,15 @@
                 <h5 class="card-title mb-1">Omellet jamón y queso</h5>
                 <p class="card-text small mb-2">Omellet de jamón y queso acompañado de ensalada</p>
                 <h6 class="mb-0">$4900</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="cafe-expreso"
+                   data-name="Café expreso"
+                   data-price="2100"
+                   data-img="./img/cafeexpreso.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -146,6 +98,15 @@
                   palta.
                 </p>
                 <h6 class="mb-0">$6500</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="sandwich-pollo"
+                   data-name="Sandwich de pollo"
+                   data-price="6500"
+                   data-img="./img/sandwich de pollo.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -164,6 +125,15 @@
                   crema de palta
                 </p>
                 <h6 class="mb-0">$5200</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="hamburguesa-veggie"
+                   data-name="Hamburguesa veggie"
+                   data-price="5200"
+                   data-img="./img/veggie.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -242,5 +212,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

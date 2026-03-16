@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M&L Coffe</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
-    
   </head>
 
   <body>
     <header>
-      <h1>M&L Coffe</h1>
-      <p class="headertext">Sensaciones de la cocina a tu mesa.</p>
+      <div class="header-top">
+        <img src="./pages/img/logoMYL.png" alt="Logo de M&L Coffe" class="logo" />
+        <p class="headertext">Sensaciones de la cocina a tu mesa.</p>
+        <div class="header-spacer" aria-hidden="true"></div>
+      </div>
 
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid px-4 position-relative">
+        <div class="container-fluid px-4">
           <a class="navbar-brand fw-bold" href="/index.html"></a>
 
           <button
@@ -33,79 +30,39 @@
             data-bs-target="#mainNav"
             aria-controls="mainNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
-    
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="mainNav">
-            <ul
-              class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-  
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+            <ul class="navbar-nav mx-auto d-none d-lg-flex gap-4">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
 
             <ul class="navbar-nav d-lg-none">
-              <li class="nav-item">
-                <a class="nav-link active" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+              <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
 
             <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
               <form class="d-flex" role="search">
-                <input
-                  class="form-control form-control-sm me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Buscar"/>
-                
-                <button
-                  class="btn btn-sm btn-outline-success btn-buscar"
-                  type="submit">Buscar</button>
+                <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-sm btn-outline-success btn-buscar" type="submit">Buscar</button>
               </form>
 
-              <a
-                href="/pages/carrito.html"
-                class="text-decoration-none position-relative"
-                aria-label="Carrito">
-              
-                <span style="font-size: 20px">🛒</span>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                
+              <a href="/pages/carrito.html" class="text-decoration-none position-relative" aria-label="Carrito">
+                <span style="font-size: 30px">🛒</span>
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
               </a>
             </div>
           </div>
@@ -113,32 +70,216 @@
       </nav>
     </header>
 
-    <main>
-      <section>
-        
-        <p class="variedades">¿Conoces los tipos de café que existen?</p>
+    <main class="main-panel">
+      <section class="cafe-intro">
+        <div class="intro-hero">
+          <img class="intro-hero__img intro-hero__img--left" src="./pages/img/grano1.png" alt="Imagen decorativa izquierda" />
 
-        <ul class="tiposdecafe">
-          <li>Arábica: sabor más suave y aromático, menos cafeína.</li>
-          <li>Robusta: sabor más fuerte y amargo, más cafeína.</li>
-          <li>Liberica y Excelsa: menos comunes, sabores únicos.</li>
-        </ul>
+          <button class="text-focus-in" type="button" data-bs-toggle="collapse" data-bs-target="#masTexto" aria-expanded="false" aria-controls="masTexto">
+            ¿Conoces los tipos de café que existen?
+          </button>
 
-        <div class="videos">
-          <div class="vid" id="vid1">
-            <video src="./vid/coffe1.mp4" controls></video>
+          <img class="intro-hero__img intro-hero__img--right" src="./pages/img/grano2.png" alt="Imagen decorativa derecha" />
+        </div>
+      </section>
+
+      <section class="infointro">
+        <div id="masTexto" class="collapse">
+          <p class="historia">
+            La historia del café se remonta al siglo IX en Etiopía, donde la leyenda cuenta que el pastor Kaldi descubrió sus efectos energizantes gracias a sus cabras. Originario de África, el cultivo y consumo se consolidó en Yemen (siglo XV) antes de expandirse a Europa y, finalmente, a América, convirtiéndose en una de las bebidas más consumidas mundialmente.
+          </p>
+
+          <div class="coffee-cards" id="coffeeCardsAccordion">
+            <div class="tipos-de-cafe">
+              <button class="tipo-titulo" type="button" data-bs-toggle="collapse" data-bs-target="#cardArabica" aria-expanded="false" aria-controls="cardArabica">
+                Arábica
+              </button>
+              <div id="cardArabica" class="collapse tipo-body" data-bs-parent="#coffeeCardsAccordion">
+                <div class="tipo-seccion">
+                  <h5>🌍 Ubicación principal</h5>
+                  <ul>
+                    <li>América Latina: Brasil, Colombia, Perú, Guatemala</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>🌡️ Clima</h5>
+                  <ul>
+                    <li>Clima templado a tropical</li>
+                    <li>Altitud: 600 a 2000 metros</li>
+                    <li>Temperatura ideal: 15 °C – 24 °C</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>📅 Fechas de cultivo</h5>
+                  <ul>
+                    <li>Floración: primavera</li>
+                    <li>Cosecha: entre octubre y marzo (en hemisferio sur suele ser abril–septiembre)</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>👅 Sabor</h5>
+                  <ul>
+                    <li>Más suave y complejo</li>
+                    <li>Notas frutales, florales y dulces</li>
+                    <li>Acidez alta y agradable</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipos-de-cafe">
+              <button class="tipo-titulo" type="button" data-bs-toggle="collapse" data-bs-target="#cardRobusta" aria-expanded="false" aria-controls="cardRobusta">
+                Robusta
+              </button>
+              <div id="cardRobusta" class="collapse tipo-body" data-bs-parent="#coffeeCardsAccordion">
+                <div class="tipo-seccion">
+                  <h5>🌍 Ubicación principal</h5>
+                  <ul>
+                    <li>Vietnam (principal productor)</li>
+                    <li>Brasil</li>
+                    <li>Indonesia</li>
+                    <li>África occidental (Uganda, Costa de Marfil)</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>🌡️ Clima</h5>
+                  <ul>
+                    <li>Tropical caliente y húmedo</li>
+                    <li>Altitud: 0 a 800 metros</li>
+                    <li>Temperatura ideal: 22 °C – 30 °C</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>📅 Fechas de cultivo</h5>
+                  <ul>
+                    <li>Floración: estación lluviosa</li>
+                    <li>Cosecha: noviembre a marzo</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>👅 Sabor</h5>
+                  <ul>
+                    <li>Más fuerte y amargo</li>
+                    <li>Notas terrosas, amaderadas</li>
+                    <li>Acidez baja</li>
+                    <li>Muy intenso</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipos-de-cafe">
+              <button class="tipo-titulo" type="button" data-bs-toggle="collapse" data-bs-target="#cardLiberica" aria-expanded="false" aria-controls="cardLiberica">
+                Liberica
+              </button>
+              <div id="cardLiberica" class="collapse tipo-body" data-bs-parent="#coffeeCardsAccordion">
+                <div class="tipo-seccion">
+                  <h5>🌍 Ubicación principal</h5>
+                  <ul>
+                    <li>Filipinas</li>
+                    <li>Malasia</li>
+                    <li>Liberia</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>🌡️ Clima</h5>
+                  <ul>
+                    <li>Tropical muy húmedo</li>
+                    <li>Altitud: baja a media</li>
+                    <li>Temperatura ideal: 24 °C – 30 °C</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>📅 Fechas de cultivo</h5>
+                  <ul>
+                    <li>Floración: temporada de lluvias</li>
+                    <li>Cosecha: noviembre a enero (varía por región)</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>👅 Sabor</h5>
+                  <ul>
+                    <li>Muy aromático</li>
+                    <li>Notas ahumadas, florales y frutales</li>
+                    <li>Cuerpo pesado</li>
+                    <li>Perfil exótico y diferente</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipos-de-cafe">
+              <button class="tipo-titulo" type="button" data-bs-toggle="collapse" data-bs-target="#cardExcelsa" aria-expanded="false" aria-controls="cardExcelsa">
+                Excelsa
+              </button>
+              <div id="cardExcelsa" class="collapse tipo-body" data-bs-parent="#coffeeCardsAccordion">
+                <div class="tipo-seccion">
+                  <h5>🌍 Ubicación principal</h5>
+                  <ul>
+                    <li>Sudeste asiático: Vietnam, Filipinas, Indonesia</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>🌡️ Clima</h5>
+                  <ul>
+                    <li>Tropical húmedo</li>
+                    <li>Altitud: media</li>
+                    <li>Temperatura ideal: 23 °C – 29 °C</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>📅 Fechas de cultivo</h5>
+                  <ul>
+                    <li>Floración: estación húmeda</li>
+                    <li>Cosecha: final de otoño a invierno</li>
+                  </ul>
+                </div>
+                <div class="tipo-seccion">
+                  <h5>👅 Sabor</h5>
+                  <ul>
+                    <li>Perfil muy complejo</li>
+                    <li>Notas frutales y ácidas</li>
+                    <li>Mezcla de dulce y ácido</li>
+                    <li>Se usa mucho en blends para dar profundidad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="vid" id="vid2">
-            <video src="./vid/coffe2.mp4" controls></video>
-          </div>
-          <div class="vid" id="vid3">
-            <video src="./vid/coffe3.mp4" controls></video>
-          </div>
+
+          <section class="cafe-videos">
+            <div class="video-row is-left">
+              <div class="video-box">
+                <video class="video-media" src="./vid/videocafe1.mp4" controls preload="metadata"></video>
+              </div>
+              <div class="video-text">
+                <p>Desde las montañas donde nace el grano hasta tu taza cada mañana. Café artesanal, seleccionado con pasión.</p>
+              </div>
+            </div>
+
+            <div class="video-row is-right">
+              <div class="video-box">
+                <video class="video-media" src="./vid/videocafe2.mp4" controls preload="metadata"></video>
+              </div>
+              <div class="video-text">
+                <p>Cada grano cuenta una historia. Tostado con precisión, preparado con dedicación. El verdadero sabor del café artesanal.</p>
+              </div>
+            </div>
+
+            <div class="video-row is-left">
+              <div class="video-box">
+                <video class="video-media" src="./vid/videocafe3.mp4" controls preload="metadata"></video>
+              </div>
+              <div class="video-text">
+                <p>Más que café, es un momento. Aromas, sabores y sensaciones que transforman tu pausa en una experiencia.</p>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-light mt-5">
+    <footer class="bg-dark text-light">
       <div class="container py-4">
         <div class="row g-3 align-items-center">
           <div class="col-12 col-lg-4">
@@ -146,65 +287,32 @@
           </div>
 
           <div class="col-12 col-lg-8">
-            <ul
-              class="list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 justify-content-lg-end mb-0">
-            
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/sobre-nosotros.html">Sobre nosotros</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/mi-cuenta.html">Mi cuenta</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/carrito.html">Carrito</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/derechos-de-autor.html">Derechos de autor</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/quejas-online.html">Quejas online</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
-                
-              </li>
+            <ul class="list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 justify-content-lg-end mb-0">
+              <li><a class="link-light text-decoration-none" href="/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/mi-cuenta.html">Mi cuenta</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/carrito.html">Carrito</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/derechos-de-autor.html">Derechos de autor</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/quejas-online.html">Quejas online</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
             </ul>
           </div>
         </div>
 
         <hr class="border-secondary my-3" />
 
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
-        
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
           <span class="small text-secondary">© 2026 M&L Coffe. Todos los derechos reservados.</span>
-          
           <div class="d-flex gap-3">
-            <a class="link-light" href="#" aria-label="Instagram"
-              ><i class="fa-brands fa-instagram"></i></a>
+            <a class="link-light" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a class="link-light" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
             <a class="link-light" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/reveal-videos.js" defer></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

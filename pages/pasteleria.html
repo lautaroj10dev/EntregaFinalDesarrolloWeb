@@ -5,108 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carta</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="../style/style.css" />
   </head>
 
   <body>
     <header>
-      <h1>M&L Coffe</h1>
-      <p>Sensaciones de la cocina a tu mesa.</p>
-
+      <div class="header-top">
+        <img src="./pages/img/logoMYL.png" alt="Logo de M&L Coffe" class="logo" />
+        <p class="headertext">Sensaciones de la cocina a tu mesa.</p>
+        <div class="header-spacer"></div>
+      </div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-4 position-relative">
           <a class="navbar-brand fw-bold" href="/index.html"></a>
-
           <button
-            class="navbar-toggler ms-auto"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
             aria-controls="mainNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
-      
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="mainNav">
-            <ul
-              class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-3">
-            
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+            <ul class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-4">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <ul class="navbar-nav d-lg-none">
-              <li class="nav-item">
-                <a class="nav-link active" href="/pages/pasteleria.html"
-                  >Pastelería</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+              <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
               <form class="d-flex" role="search">
-                <input
-                  class="form-control form-control-sm me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Buscar"/>
-                
-                <button
-                  class="btn btn-sm btn-outline-success btn-buscar"
-                  type="submit">Buscar</button>
+                <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-sm btn-outline-success btn-buscar" type="submit">Buscar</button>
               </form>
-
-              <a
-                href="/pages/carrito.html"
-                class="text-decoration-none position-relative"
-                aria-label="Carrito">
-              
-                <span style="font-size: 20px">🛒</span>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  >0</span> 
-                </a>
+              <a href="/pages/carrito.html" class="text-decoration-none position-relative" aria-label="Carrito">
+                <span style="font-size: 30px">🛒</span>
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+              </a>
             </div>
           </div>
         </div>
@@ -121,11 +73,11 @@
               <img src="./img/lemonpie.jpg" class="card-img-top" alt="Lemon pie" />
               <div class="card-body">
                 <h5 class="card-title mb-1">Lemon pie</h5>
-                <p class="card-text small mb-2">
-                  Base crocante de masa dulce, relleno de suave crema de limón y
-                  cubierto con un delicado merengue.
-                </p>
+                <p class="card-text small mb-2">Base crocante de masa dulce, relleno de suave crema de limón y cubierto con un delicado merengue.</p>
                 <h6 class="mb-0">$5200</h6>
+                <button class="btn btn-sm btn-primary mt-2" type="button" data-add-to-cart data-id="lemon-pie" data-name="Lemon pie" data-price="5200" data-img="./img/lemonpie.jpg">
+                  Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -135,29 +87,33 @@
               <img src="./img/chocotorta.jpg" class="card-img-top" alt="Chocotorta" />
               <div class="card-body">
                 <h5 class="card-title mb-1">Chocotorta</h5>
-                <p class="card-text small mb-2">
-                  Postre clásico argentino, capas de galletas de chocolate y crema
-                  suave de dulce de leche y queso crema.
-                </p>
+                <p class="card-text small mb-2">Postre clásico argentino, capas de galletas de chocolate y crema suave de dulce de leche y queso crema.</p>
                 <h6 class="mb-0">$4800</h6>
+                <button class="btn btn-sm btn-primary mt-2" type="button" data-add-to-cart data-id="chocotorta" data-name="Chocotorta" data-price="4800" data-img="./img/chocotorta.jpg">
+                  Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 card-menu border-0">
-              <img
-                src="./img/cheesecakefrutosrojos.jpg"
-                class="card-img-top"
-                alt="Cheesecake frutos rojos"/>
-              
+              <img src="./img/cheesecakefrutosrojos.jpg" class="card-img-top" alt="Cheesecake frutos rojos" />
               <div class="card-body">
                 <h5 class="card-title mb-1">Cheesecake frutos rojos</h5>
-                <p class="card-text small mb-2">
-                  Cremoso cheesecake sobre base de galletas, coronado con una salsa
-                  de frutos rojos frescos.
-                </p>
+                <p class="card-text small mb-2">Cremoso cheesecake sobre base de galletas, coronado con una salsa de frutos rojos frescos.</p>
                 <h6 class="mb-0">$6200</h6>
+                <button
+                  class="btn btn-sm btn-primary mt-2"
+                  type="button"
+                  data-add-to-cart
+                  data-id="cheesecake-frutos-rojos"
+                  data-name="Cheesecake frutos rojos"
+                  data-price="6200"
+                  data-img="./img/cheesecakefrutosrojos.jpg"
+                >
+                  Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -167,11 +123,11 @@
               <img src="./img/tiramisu.jpg" class="card-img-top" alt="Tiramisú" />
               <div class="card-body">
                 <h5 class="card-title mb-1">Tiramisú</h5>
-                <p class="card-text small mb-2">
-                  Postre italiano tradicional con capas de vainillas, crema de
-                  mascarpone y un toque de café y cacao.
-                </p>
+                <p class="card-text small mb-2">Postre italiano tradicional con capas de vainillas, crema de mascarpone y un toque de café y cacao.</p>
                 <h6 class="mb-0">$5500</h6>
+                <button class="btn btn-sm btn-primary mt-2" type="button" data-add-to-cart data-id="tiramisu" data-name="Tiramisú" data-price="5500" data-img="./img/tiramisu.jpg">
+                  Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -181,11 +137,11 @@
               <img src="./img/brownie.jpg" class="card-img-top" alt="Brownie" />
               <div class="card-body">
                 <h5 class="card-title mb-1">Brownie</h5>
-                <p class="card-text small mb-2">
-                  Clásico brownie de chocolate intenso, húmedo por dentro y con una
-                  textura irresistible.
-                </p>
+                <p class="card-text small mb-2">Clásico brownie de chocolate intenso, húmedo por dentro y con una textura irresistible.</p>
                 <h6 class="mb-0">$5200</h6>
+                <button class="btn btn-sm btn-primary mt-2" type="button" data-add-to-cart data-id="brownie" data-name="Brownie" data-price="5200" data-img="./img/brownie.jpg">
+                  Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -201,67 +157,31 @@
           </div>
 
           <div class="col-12 col-lg-8">
-            <ul
-              class="list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 justify-content-lg-end mb-0">
-            
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/sobre-nosotros.html"
-                  >Sobre nosotros</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/mi-cuenta.html">Mi cuenta</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/carrito.html">Carrito</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/derechos-de-autor.html">Derechos de autor</a>
-              
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/quejas-online.html">Quejas online</a>
-                
-              </li>
-              <li>
-                <a
-                  class="link-light text-decoration-none"
-                  href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a>
-            
-              </li>
+            <ul class="list-unstyled d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 justify-content-lg-end mb-0">
+              <li><a class="link-light text-decoration-none" href="/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/mi-cuenta.html">Mi cuenta</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/carrito.html">Carrito</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/derechos-de-autor.html">Derechos de autor</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/quejas-online.html">Quejas online</a></li>
+              <li><a class="link-light text-decoration-none" href="/pages/trabaja-con-nosotros.html">Trabaja con nosotros</a></li>
             </ul>
           </div>
         </div>
 
         <hr class="border-secondary my-3" />
 
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
           <span class="small text-secondary">© 2026 M&L Coffe. Todos los derechos reservados.</span>
-          
+
           <div class="d-flex gap-3">
-            <a class="link-light" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="link-light" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i>
-            </a>
-            <a class="link-light" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i>
-            </a>
+            <a class="link-light" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="link-light" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a class="link-light" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

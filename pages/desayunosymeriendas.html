@@ -16,98 +16,39 @@
 
   <body>
     <header>
-      <h1>M&L Coffe</h1>
-      <p>Sensaciones de la cocina a tu mesa.</p>
-
+      <div class="header-top">
+        <img src="./pages/img/logoMYL.png" alt="Logo de M&L Coffe" class="logo" />
+        <p class="headertext">Sensaciones de la cocina a tu mesa.</p>
+        <div class="header-spacer"></div>
+      </div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-4 position-relative">
           <a class="navbar-brand fw-bold" href="/index.html"></a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-          
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="mainNav">
-            <ul
-              class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-3">
-            
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+            <ul class="navbar-nav position-absolute top-50 start-50 translate-middle d-none d-lg-flex gap-4">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <ul class="navbar-nav d-lg-none">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="/pages/desayunosymeriendas.html">Desayunos</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/cafes.html">Cafés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/pasteleria.html">Pastelería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/sintacc.html">Sin TACC</a>
-              </li>
+              <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/cafes.html">Cafés</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/desayunosymeriendas.html">Desayunos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/almuerzos.html">Almuerzos</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/pasteleria.html">Pastelería</a></li>
+              <li class="nav-item"><a class="nav-link" href="/pages/sintacc.html">Sin TACC</a></li>
             </ul>
-
             <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
               <form class="d-flex" role="search">
-                <input
-                  class="form-control form-control-sm me-2"
-                  type="search"
-                  placeholder="Buscar"
-                  aria-label="Buscar"/>
-                
-                <button
-                  class="btn btn-sm btn-outline-success btn-buscar"
-                  type="submit">Buscar</button>
-                
+                <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-sm btn-outline-success btn-buscar" type="submit">Buscar</button>
               </form>
-
-              <a
-                href="/pages/carrito.html"
-                class="text-decoration-none position-relative"
-                aria-label="Carrito">
-              
-                <span style="font-size: 20px">🛒</span>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                
-              </a>
+              <a href="/pages/carrito.html" class="text-decoration-none position-relative" aria-label="Carrito"><span style="font-size: 30px">🛒</span>
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
             </div>
           </div>
         </div>
@@ -126,6 +67,15 @@
                   Tostadas integrales, huevos revueltos, jamón cocido y tomates cherry.
                 </p>
                 <h6 class="mb-0">$5900</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="tostada-campo"
+                   data-name="Tostada de campo"
+                   data-price="5900"
+                   data-img="./img/campo.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -143,6 +93,15 @@
                   Tostadas integral, huevo revuelto, palta, queso crema.
                 </p>
                 <h6 class="mb-0">$5500</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="avocado-toast"
+                   data-name="Avocado toast"
+                   data-price="5500"
+                   data-img="./img/avocado toast.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -160,6 +119,15 @@
                   Dips: queso crema y mermelada / manteca y dulce de leche.
                 </p>
                 <h6 class="mb-0">$3800</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="tostada-integral"
+                   data-name="Tostada integral"
+                   data-price="3800"
+                   data-img="./img/tostada integral.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -177,6 +145,15 @@
                   Tostada de pan integral, queso crema, palta, huevos revueltos y pollo.
                 </p>
                 <h6 class="mb-0">$6000</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="tostada-proteica"
+                   data-name="Tostada proteica"
+                   data-price="6000"
+                   data-img="./img/tostada proteica.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -194,6 +171,15 @@
                   Frutilla, naranja, banana, durazno y ananá.
                 </p>
                 <h6 class="mb-0">$3000</h6>
+                <button
+                   class="btn btn-sm btn-primary mt-2"
+                   type="button"
+                   data-add-to-cart
+                   data-id="ensalada-frutas"
+                   data-name="Ensalada de frutas"
+                   data-price="3000"
+                   data-img="./img/ensalada de frutas.jpg">Añadir al carrito
+                </button>
               </div>
             </div>
           </div>
@@ -273,5 +259,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>
