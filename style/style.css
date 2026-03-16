@@ -58,13 +58,8 @@ main {
   padding: 20px 0 30px;
 }
 
-.navbar .collapse,
-.navbar .collapsing {
-  width: 100%;
-}
-
-.coffee-cards .collapse,
-.coffee-cards .collapsing {
+.collapse,
+.collapsing {
   width: 100%;
 }
 
@@ -112,22 +107,18 @@ main {
     max-width: 200px;
   }
 }
-
 .navbar {
   background-color: #f7ebdb;
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 2rem;
   margin: 0;
 }
-
 .navbar .container-fluid {
   position: relative;
 }
-
 .navbar .navbar-collapse {
   width: 100%;
 }
-
 .navbar ul.navbar-nav.mx-auto.d-none.d-lg-flex {
   position: absolute;
   left: 50%;
@@ -137,7 +128,6 @@ main {
   padding: 0;
   justify-content: center;
 }
-
 .navbar .nav-link {
   background-color: transparent;
   transition: background-color 200ms ease, color 200ms ease;
@@ -148,27 +138,21 @@ main {
   letter-spacing: 0.2px;
   border-radius: 21px;
 }
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar .nav-link:hover, .navbar .nav-link:focus {
   background-color: rgba(107, 145, 104, 0.45);
   color: #5a4747 !important;
   text-decoration: none;
 }
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
+.navbar .nav-link:hover, .navbar .nav-link:focus {
   color: #5a4747 !important;
   text-decoration: underline !important;
   text-underline-offset: 5px;
 }
-
 .navbar .nav-link.active {
   color: #5a4747 !important;
   text-decoration: underline !important;
   text-underline-offset: 5px;
 }
-
 .navbar #cart-count {
   min-width: 14px;
   height: 14px;
@@ -181,7 +165,6 @@ main {
   border-color: #8b5e34;
   color: #8b5e34;
 }
-
 .btn-buscar:hover {
   background-color: #8b5e34;
   border-color: #8b5e34;
@@ -242,7 +225,6 @@ button.text-focus-in:focus-visible {
     opacity: 1;
   }
 }
-
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -255,7 +237,6 @@ button.text-focus-in:focus-visible {
     opacity: 1;
   }
 }
-
 .intro-hero__img {
   width: min(380px, 100%);
   height: auto;
@@ -295,7 +276,6 @@ button.text-focus-in:focus-visible {
     margin-right: auto !important;
   }
 }
-
 .historia {
   text-align: left;
   color: #d3cccc;
@@ -310,9 +290,7 @@ button.text-focus-in:focus-visible {
     margin: 0 18px;
   }
 }
-
-footer a.link-light:hover,
-footer a.link-light:focus {
+footer a.link-light:hover, footer a.link-light:focus {
   color: #5a4747 !important;
   text-decoration: underline !important;
   text-underline-offset: 5px;
@@ -336,13 +314,11 @@ footer a.link-light:focus {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .coffee-cards {
     grid-template-columns: 1fr;
   }
 }
-
 .tipos-de-cafe {
   background-color: rgba(255, 255, 255, 0.706);
   border-radius: 12px;
@@ -375,16 +351,6 @@ footer a.link-light:focus {
   padding: 14px 16px 16px;
   flex: 1 1 auto;
   min-height: 220px;
-  width: 100%;
-  display: block;
-}
-
-.tipos-de-cafe .tipo-body.collapse:not(.show) {
-  display: none;
-}
-
-.tipos-de-cafe .tipo-body.collapse.show {
-  display: block;
 }
 
 .tipos-de-cafe h5 {
@@ -522,7 +488,12 @@ html.js .video-row.is-visible .video-text {
   .video-row.is-right .video-text {
     order: initial;
   }
-*  .video-text {
-    margin-top: 18px;
+  .video-media {
+    height: 240px;
+  }
+  html.js .video-row .video-text {
+    transform: translateY(20px);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
